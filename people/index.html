@@ -17,8 +17,8 @@ title: People
 {% for person in site.people %}
     <tr>
       <td><a href="{{ site.baseurl }}{{ person.url }}">{{ person.name }}</a></td>
-      <td>{{ person.birth_date }}</td>
-      <td>{{ person.death_date }}</td>
+      <td>{{ person.birth_date | date: "%-d %B %Y" }}</td>
+      <td>{{ person.death_date | date: "%-d %B %Y" }}</td>
     </tr>
 {% endfor %}
   </tbody>
