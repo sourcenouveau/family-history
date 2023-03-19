@@ -16,11 +16,12 @@ title: People
     </tr>
   </thead>
   <tbody>
-{% for person in site.people %}
+{% assign ordered_people = site.people | sort: "name" %}
+{% for person in ordered_people %}
     <tr>
       <td><a href="{{ site.baseurl }}{{ person.url }}">{{ person.name }}</a></td>
-      <td>{{ person.birth_date | date: "%-d %B %Y" }}</td>
-      <td>{{ person.death_date | date: "%-d %B %Y" }}</td>
+      <td>{{ person.birth_date }}</td>
+      <td>{{ person.death_date }}</td>
     </tr>
 {% endfor %}
   </tbody>
