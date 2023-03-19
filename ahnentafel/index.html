@@ -5,7 +5,7 @@ title: Ahnentafel
 
 <h1>{{ page.title }}</h1>
 
-{% assign person_dcd = site.people | find: "name", "Daniel Clifton Dudley" %}
+{% assign person_dcd = site.people | where: "name", "Daniel Clifton Dudley" | first %}
 
 <h2>{{ person_dcd.name }}</h2>
 
