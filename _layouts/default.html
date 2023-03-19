@@ -8,8 +8,8 @@
   <body>
     <div class="content">
       <nav>
-        <a href="{% link index.html site.baseurl %}">Home</a>
-        <a href="{% link ahnentafel/index.html site.baseurl %}">Ahnentafel</a>
+        <a href="{{ site.baseurl }}{% link index.html %}">Home</a>
+        <a href="{{ site.baseurl }}{% link ahnentafel/index.html %}">Ahnentafel</a>
       </nav>
       {{ content }}
     </div>
