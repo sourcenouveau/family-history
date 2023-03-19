@@ -11,7 +11,7 @@ defaults:
       path: ""
       type: "people"
     values:
-      layout: "default"
+      layout: "person"
   - scope:
       path: ""
       type: "places"
