@@ -1,5 +1,6 @@
 baseurl: /family-history
 
+collections_dir: _collections
 collections:
   people:
     output: true
