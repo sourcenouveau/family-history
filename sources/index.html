@@ -1,0 +1,21 @@
+---
+layout: default
+title: Sources
+---
+
+<h1>{{ page.title }}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for source in site.sources %}
+    <tr>
+      <td><a href="{{ site.baseurl }}{{ source.url }}">{{ source.name }}</a></td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>

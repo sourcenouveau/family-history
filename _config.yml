@@ -2,12 +2,21 @@ baseurl: /family-history
 
 collections_dir: _collections
 collections:
+  events:
+    output: true
   people:
     output: true
   places:
     output: true
+  sources:
+    output: true
 
 defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "default"
   - scope:
       path: ""
       type: "people"
@@ -16,5 +25,10 @@ defaults:
   - scope:
       path: ""
       type: "places"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "sources"
     values:
       layout: "default"
