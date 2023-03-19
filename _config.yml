@@ -1,2 +1,7 @@
-name: Family History
 baseurl: /family-history
+
+collections:
+  people:
+    output: true
+  places:
+    output: true
