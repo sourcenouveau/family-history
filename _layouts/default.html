@@ -2,13 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bulma.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
   </head>
   <body>
-    <div class="content">
-      {% include nav.html %}
-      {{ content }}
-    </div>
+    {% include nav.html %}
+    <section class="section">
+      <div class="container">
+        {{ content }}
+      </div>
+    </section>
   </body>
 </html>
