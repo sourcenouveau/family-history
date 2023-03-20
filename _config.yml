@@ -1,5 +1,3 @@
-baseurl: /family-history
-
 collections_dir: _collections
 collections:
   events:
