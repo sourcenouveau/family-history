@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/bulma.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script defer src="/assets/js/alpine.min.js"></script>
   </head>
-  <body>
-    {% include nav.html %}
+  <body class="has-navbar-fixed-top">
+    <div id="header">
+
+      <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation" x-data="{ open: false }">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            {{ site.title }}
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': open }" x-on:click="open = !open">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navMenu" class="navbar-menu" :class="{ 'is-active': open }">
+          <div class="navbar-start">
+            {% if site.data.navigation %}
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link | relative_url }}" class="navbar-item {% if page.url contains item.link %}is-active{% endif %}">
+              {{ item.name }}
+            </a>
+            {% endfor %}
+            {% endif %}
+          </div>
+          <div class="navbar-end">
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    
     <section class="section">
       <div class="container">
-        {{ content }}
+
+        <div class="columns is-centered">
+          <div class="column is-half">
+
+            <h1 class="title">{{ page.title }}</h1>
+            {{ content }}
+
+          </div>
+        </div>
+
       </div>
     </section>
+
+    <footer id="footer">
+      <div class="container">
+
+        <div class="columns is-centered">
+          <div class="column is-half">
+
+          </div>
+        </div>
+
+      </div>
+    </footer>
   </body>
 </html>

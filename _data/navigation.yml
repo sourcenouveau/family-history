@@ -1,0 +1,8 @@
+- name: People
+  link: /people/
+- name: Places
+  link: /places/
+- name: Events
+  link: /events/
+- name: Sources
+  link: /sources/
