@@ -9,35 +9,32 @@
     <script defer src="/assets/js/alpine.min.js"></script>
   </head>
   <body class="has-navbar-fixed-top">
-    <div id="header">
 
-      <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation" x-data="{ open: false }">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="/">
-            {{ site.title }}
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation" x-data="{ open: false }">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          {{ site.title }}
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': open }" x-on:click="open = !open">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu" :class="{ 'is-active': open }">
+        <div class="navbar-start">
+          {% if site.data.navigation %}
+          {% for item in site.data.navigation %}
+          <a href="{{ item.link | relative_url }}" class="navbar-item {% if page.url contains item.link %}is-active{% endif %}">
+            {{ item.name }}
           </a>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': open }" x-on:click="open = !open">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+          {% endfor %}
+          {% endif %}
         </div>
-        <div id="navMenu" class="navbar-menu" :class="{ 'is-active': open }">
-          <div class="navbar-start">
-            {% if site.data.navigation %}
-            {% for item in site.data.navigation %}
-            <a href="{{ item.link | relative_url }}" class="navbar-item {% if page.url contains item.link %}is-active{% endif %}">
-              {{ item.name }}
-            </a>
-            {% endfor %}
-            {% endif %}
-          </div>
-          <div class="navbar-end">
-          </div>
+        <div class="navbar-end">
         </div>
-      </nav>
-
-    </div>
+      </div>
+    </nav>
     
     <section class="section">
       <div class="container">
@@ -54,12 +51,14 @@
       </div>
     </section>
 
-    <footer id="footer">
+    <footer class="footer">
       <div class="container">
 
         <div class="columns is-centered">
           <div class="column is-half">
-
+            <p>
+              Copyright &copy; Michael Dudley. All rights reserved.
+            </p>
           </div>
         </div>
 
