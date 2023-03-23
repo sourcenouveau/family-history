@@ -1,4 +1,6 @@
 ---
+title: Daniel Clifton Dudley (1920–1977)
+
 name: Daniel Clifton Dudley
 birth_date: 1920-05-07
 birth_place: Olean, Cattaraugus County, New York, United States of America
