@@ -17,14 +17,14 @@ and my spouse's grandparents:
 - Donald Eugene Hulslander (1936–2013) of Dryden, New York
 - Eleanor Marie Humphrey (1935–1989) of Oswego, New York
 
-While genealogy has been a lifelong hobby of mine, much of my effort has been spent accumulating facts and records.
+Genealogy has been a lifelong hobby of mine, and much of my effort has been spent accumulating facts and records.
 When my father passed several years ago I shifted my focus toward crafting something from that research.
-I wanted to tell my family's stories in a format that is interesting and easy to share.
-I also felt responsible for presenting the truth and supporting it with evidence.
+I want to tell my family's stories in a format that is interesting and easy to share.
+I want the information I present to be accurate and supported by evidence.
 
 This site is my ongoing project to achieve those goals.
 If you find it useful or have questions or thoughts, I'd love to hear from you.
 
 Michael Dudley\
-East Aurora, New York\
+East Aurora, NY, USA\
 2023
