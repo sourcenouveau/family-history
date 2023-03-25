@@ -1,0 +1,19 @@
+# Countries
+-
+  name: Canada
+  iso-3166-1-code: CA
+-
+  name: Ireland
+  iso-3166-1-code: IE
+-
+  name: Italy
+  iso-3166-1-code: IT
+-
+  name: Poland
+  iso-3166-1-code: PL
+-
+  name: United Kingdom of Great Britain and Northern Ireland
+  iso-3166-1-code: GB
+-
+  name: United States of America
+  iso-3166-1-code: US

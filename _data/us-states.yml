@@ -1,0 +1,151 @@
+# States of the United States of America
+-
+  name: Alabama
+  iso-3166-2-code: US-AL
+-
+  name: Alaska
+  iso-3166-2-code: US-AK
+-
+  name: Arizona
+  iso-3166-2-code: US-AZ
+-
+  name: Arkansas
+  iso-3166-2-code: US-AR
+-
+  name: California
+  iso-3166-2-code: US-CA
+-
+  name: Colorado
+  iso-3166-2-code: US-CO
+-
+  name: Connecticut
+  iso-3166-2-code: US-CT
+-
+  name: Delaware
+  iso-3166-2-code: US-DE
+-
+  name: Florida
+  iso-3166-2-code: US-FL
+-
+  name: Georgia
+  iso-3166-2-code: US-GA
+-
+  name: Hawaii
+  iso-3166-2-code: US-HI
+-
+  name: Idaho
+  iso-3166-2-code: US-ID
+-
+  name: Illinois
+  iso-3166-2-code: US-IL
+-
+  name: Indiana
+  iso-3166-2-code: US-IN
+-
+  name: Iowa
+  iso-3166-2-code: US-IA
+-
+  name: Kansas
+  iso-3166-2-code: US-KS
+-
+  name: Kentucky
+  iso-3166-2-code: US-KY
+-
+  name: Louisiana
+  iso-3166-2-code: US-LA
+-
+  name: Maine
+  iso-3166-2-code: US-ME
+-
+  name: Maryland
+  iso-3166-2-code: US-MD
+-
+  name: Massachusetts
+  iso-3166-2-code: US-MA
+-
+  name: Michigan
+  iso-3166-2-code: US-MI
+-
+  name: Minnesota
+  iso-3166-2-code: US-MN
+-
+  name: Mississippi
+  iso-3166-2-code: US-MS
+-
+  name: Missouri
+  iso-3166-2-code: US-MO
+-
+  name: Montana
+  iso-3166-2-code: US-MT
+-
+  name: Nebraska
+  iso-3166-2-code: US-NE
+-
+  name: Nevada
+  iso-3166-2-code: US-NV
+-
+  name: New Hampshire
+  iso-3166-2-code: US-NH
+-
+  name: New Jersey
+  iso-3166-2-code: US-NJ
+-
+  name: New Mexico
+  iso-3166-2-code: US-NM
+-
+  name: New York
+  iso-3166-2-code: US-NY
+-
+  name: North Carolina
+  iso-3166-2-code: US-NC
+-
+  name: North Dakota
+  iso-3166-2-code: US-ND
+-
+  name: Ohio
+  iso-3166-2-code: US-OH
+-
+  name: Oklahoma
+  iso-3166-2-code: US-OK
+-
+  name: Oregon
+  iso-3166-2-code: US-OR
+-
+  name: Pennsylvania
+  iso-3166-2-code: US-PA
+-
+  name: Rhode Island
+  iso-3166-2-code: US-RI
+-
+  name: South Carolina
+  iso-3166-2-code: US-SC
+-
+  name: South Dakota
+  iso-3166-2-code: US-SD
+-
+  name: Tennessee
+  iso-3166-2-code: US-TN
+-
+  name: Texas
+  iso-3166-2-code: US-TX
+-
+  name: Utah
+  iso-3166-2-code: US-UT
+-
+  name: Vermont
+  iso-3166-2-code: US-VT
+-
+  name: Virginia
+  iso-3166-2-code: US-VA
+-
+  name: Washington
+  iso-3166-2-code: US-WA
+-
+  name: West Virginia
+  iso-3166-2-code: US-WV
+-
+  name: Wisconsin
+  iso-3166-2-code: US-WI
+-
+  name: Wyoming
+  iso-3166-2-code: US-WY
