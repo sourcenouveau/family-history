@@ -1,11 +1,5 @@
 # Family History Site
 
-## To Do
-
-1. Figure out citations, references, and footnotes.
-1. Get data using keys when generating collection pages.
-1. Use ISO codes for countries and places.
-
 ## Serving Locally
 
 ```
