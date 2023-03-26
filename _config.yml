@@ -1,7 +1,7 @@
 title: Dudley-Dixon Family History
 description:
 
-collections_dir: _collections
+collections_dir: items
 collections:
   events:
     output: true
@@ -13,26 +13,38 @@ collections:
     output: true
 
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
     values:
       layout: "default"
-  - scope:
+  -
+    scope:
       path: ""
       type: "events"
     values:
       layout: "default"
-  - scope:
+  -
+    scope:
       path: ""
       type: "people"
     values:
       layout: "person"
-  - scope:
+  -
+    scope:
       path: ""
       type: "places"
     values:
       layout: "default"
-  - scope:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /about/:year/:title:output_ext
+  -
+    scope:
       path: ""
       type: "sources"
     values:
