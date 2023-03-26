@@ -14,7 +14,7 @@ This site is my ongoing project to tell my family's stories in a format that is 
 If you find this site useful or have questions or feedback I'd love to hear from you.
 Drop me a message at [michael@dudley-dixon.family](mailto:michael@dudley-dixon.family).
 
-### How to Use This Site
+### Using This Site
 
 This site has sections for the [people](/people), [places](/places), and [events](/events) in my family's history.
 The main page for each section has an index for the individual pages in the section.
@@ -29,7 +29,7 @@ The citations look like this:
 
 ### Updates
 
-From time to time and when I make large changes to this site I share news and updates, listed below:
+I share news and updates from time to time, which you can find below.
 
 {% for post in site.posts %}
 #### [{{ post.title }} ({{ post.date | date_to_long_string: "ordinal", "US" }})]({{ post.url }})
