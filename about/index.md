@@ -3,6 +3,12 @@ layout: default
 title: About
 ---
 
+<div class="is-pulled-right" style="width: 200px;">
+  <figure class="image">
+    <img src="/assets/images/michael-dudley-portrait.jpg">
+  </figure>
+</div>
+
 My name is Michael Dudley and I am the author of this site.
 I live with my family near Buffalo, New York and I'm employed as a software engineer.
 
@@ -10,7 +16,7 @@ Genealogy has been a lifelong hobby of mine, and much of my time has been spent 
 I have been meticulous in my efforts to ensure that the information is accurate and supported by evidence.
 When my father passed away several years ago I then shifted my focus toward creating something from that body of research.
 
-This site is my ongoing project to tell my family's stories in a format that is interesting and easy to share.
+This site is an ongoing project to tell my family's stories in a format that is interesting and easy to share.
 If you find this site useful or have questions or feedback I'd love to hear from you.
 Drop me a message at [michael@dudley-dixon.family](mailto:michael@dudley-dixon.family).
 
