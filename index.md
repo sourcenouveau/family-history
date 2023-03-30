@@ -1,4 +1,5 @@
 ---
+layout: home
 title: Dudley-Dixon Family History
 subtitle: People, Places, and Events
 ---

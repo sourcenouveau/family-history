@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: content
 title: About
 ---
+
+# {{ page.title }}
 
 <div class="is-pulled-right" style="width: 200px;">
   <figure class="image">

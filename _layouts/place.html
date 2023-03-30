@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 ---
 
 {% assign place = site.data.places[page.place] %}
@@ -38,5 +38,5 @@ layout: default
 {{ place.name }} is a {{ place.admin_division }} in {{ enclosure_links | join: ", " }}.
 
 <div class="content">
-{{ page.content }}
+{{ content }}
 </div>
