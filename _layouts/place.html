@@ -2,11 +2,11 @@
 layout: base
 ---
 
-{% assign place = site.data.places[page.place] %}
+{% assign place = site.data.places[page.key] %}
 
 {% assign enclosure_breadcrumbs = "" | split: ',' %}
 {% assign enclosure_links = "" | split: ',' %}
-{% assign enclosure = site.data.places[place.enclosed_by] %}
+{% assign enclosure = site.data.places[place.enclosing_place_key] %}
 {% for i in (1..10) %}
   {% capture enclosure_breadcrumb %}<li><a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a></li>{% endcapture %}
   {% assign enclosure_breadcrumbs = enclosure_breadcrumbs | push: enclosure_breadcrumb %}
@@ -14,14 +14,14 @@ layout: base
   {% capture enclosure_link %}<a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a>{% endcapture %}
   {% assign enclosure_links = enclosure_links | push: enclosure_link %}
 
-  {% if enclosure.enclosed_by == null or enclosure.enclosed_by == "" %}
+  {% if enclosure.enclosing_place_key == null or enclosure.enclosing_place_key == "" %}
     {% break %}
   {% endif %}
 
-  {% if site.data.places contains enclosure.enclosed_by %}
-    {% assign enclosure = site.data.places[enclosure.enclosed_by] %}
+  {% if site.data.places contains enclosure.enclosing_place_key %}
+    {% assign enclosure = site.data.places[enclosure.enclosing_place_key] %}
   {% else %}
-    ERROR: {{ enclosure.enclosed_by }} not found.
+    ERROR: {{ enclosure.enclosing_place_key }} not found.
     {% break %}
   {% endif %}
 {% endfor %}
@@ -35,7 +35,7 @@ layout: base
 
 <h1 class="title">{{ place.name }}</h1>
 
-{{ place.name }} is a {{ place.admin_division }} in {{ enclosure_links | join: ", " }}.
+{{ place.name }} is a {{ place.division }} in {{ enclosure_links | join: ", " }}.
 
 <div class="content">
 {{ content }}

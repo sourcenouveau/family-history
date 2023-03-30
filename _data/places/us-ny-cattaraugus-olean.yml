@@ -1,4 +1,4 @@
 key: us-ny-cattaraugus-olean
 name: Olean
-admin_division: city
-enclosed_by: us-ny-cattaraugus
+division: city
+enclosing_place_key: us-ny-cattaraugus

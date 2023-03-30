@@ -9,12 +9,15 @@ title: Places
   <thead>
     <tr>
       <th>Name</th>
+      <th>Division</th>
     </tr>
   </thead>
   <tbody>
 {% for place in site.places %}
+{% assign data = site.data.places[place.key] %}
     <tr>
-      <td><a href="{{ place.url }}">{{ place.name }}</a></td>
+      <td><a href="{{ place.url }}">{{ data.name }}</a></td>
+      <td>{{ data.division }}</td>
     </tr>
 {% endfor %}
   </tbody>

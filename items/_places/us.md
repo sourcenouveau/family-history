@@ -1,3 +1,4 @@
 ---
-place: us
+title: United States of America
+key: us
 ---

@@ -1,4 +1,4 @@
 ---
 title: Olean
-place: us-ny-cattaraugus-olean
+key: us-ny-cattaraugus-olean
 ---

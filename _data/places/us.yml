@@ -1,4 +1,4 @@
 key: us
 name: United States of America
-admin_division: country
-enclosed_by:
+division: country
+enclosing_place_key:
