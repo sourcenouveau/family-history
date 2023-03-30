@@ -35,7 +35,7 @@ defaults:
       path: ""
       type: "places"
     values:
-      layout: "default"
+      layout: "place"
   -
     scope:
       path: ""

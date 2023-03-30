@@ -1,7 +1,4 @@
 ---
-name: Olean
-type: city
-enclosed_by: Cattaraugus County
+title: Olean
+place: us-ny-cattaraugus-olean
 ---
-
-Olean is a city in Cattaraugus County, New York, United States.

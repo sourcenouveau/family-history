@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+{% assign place = site.data.places[page.place] %}
+
+{% assign enclosure_breadcrumbs = "" | split: ',' %}
+{% assign enclosure_links = "" | split: ',' %}
+{% assign enclosure = site.data.places[place.enclosed_by] %}
+{% for i in (1..10) %}
+  {% capture enclosure_breadcrumb %}<li><a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a></li>{% endcapture %}
+  {% assign enclosure_breadcrumbs = enclosure_breadcrumbs | push: enclosure_breadcrumb %}
+
+  {% capture enclosure_link %}<a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a>{% endcapture %}
+  {% assign enclosure_links = enclosure_links | push: enclosure_link %}
+
+  {% if enclosure.enclosed_by == null or enclosure.enclosed_by == "" %}
+    {% break %}
+  {% endif %}
+
+  {% if site.data.places contains enclosure.enclosed_by %}
+    {% assign enclosure = site.data.places[enclosure.enclosed_by] %}
+  {% else %}
+    ERROR: {{ enclosure.enclosed_by }} not found.
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    {{ enclosure_breadcrumbs | reverse }}
+    <li class="is-active"><a href="#" aria-current="page">{{ place.name }}</a></li>
+  </ul>
+</nav>
+
+<h1 class="title">{{ place.name }}</h1>
+
+{{ place.name }} is a {{ place.admin_division }} in {{ enclosure_links | join: ", " }}.
+
+<div class="content">
+{{ page.content }}
+</div>
