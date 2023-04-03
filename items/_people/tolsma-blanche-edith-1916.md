@@ -1,7 +1,4 @@
 ---
-name: Blanche Edith Tolsma
-birth_date: 1916-08-06
-birth_place: Buffalo, Erie County, New York, United States of America
-death_date: 2010-07-18
-death_place:
+title: Blanche Edith Tolsma (1916–2010)
+key: tolsma-blanche-edith-1916
 ---

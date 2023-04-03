@@ -17,13 +17,13 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: "base"
   -
     scope:
       path: ""
       type: "events"
     values:
-      layout: "default"
+      layout: "event"
   -
     scope:
       path: ""
@@ -35,7 +35,7 @@ defaults:
       path: ""
       type: "places"
     values:
-      layout: "default"
+      layout: "place"
   -
     scope:
       path: ""
@@ -48,4 +48,4 @@ defaults:
       path: ""
       type: "sources"
     values:
-      layout: "default"
+      layout: "source"

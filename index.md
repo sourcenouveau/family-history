@@ -1,18 +1,21 @@
 ---
+layout: home
 title: Dudley-Dixon Family History
 subtitle: People, Places, and Events
 ---
 
 The stories begin with my grandparents:
 
-- [Daniel Clifton Dudley](/people/dudley-daniel-clifton-1920.html) (1920–1977) of Olean, New York
-- Blanche Edith Tolsma (1926–2010) of Buffalo, New York
-- Joseph Lubozynski (1923–2010) of Ontario, Pennsylvania
-- Mary Rose D'Orazio (1924–1958) of Bentleyville, Pennsylvania
+{% assign self_grandparents = "dudley-daniel-clifton-1920,tolsma-blanche-edith-1916,lubozynski-joseph-1923,dorazio-mary-rose-1924" | split: "," %}
+{% for gp_key in self_grandparents %}
+{% assign gp = site.data.people[gp_key] %}
+- [{{ gp.name }}](/people/{{ gp.key }}.html) ({{ gp.birth_date | date: "%Y" }}–{{ gp.death_date | date: "%Y" }}) of {{ site.data.places[gp.birth_place_key].name }}
+{% endfor %}
 
 and my spouse's grandparents:
 
-- Paul Bernard Dixon (1918–2008) of Utica, New York
-- Alice Rebecca Witheral (1920–2018) of De Peyster, New York
-- Donald Eugene Hulslander (1936–2013) of Dryden, New York
-- Eleanor Marie Humphrey (1935–1989) of Oswego, New York
+{% assign spouse_grandparents = "dixon-paul-bernard-1918,witheral-alice-rebecca-1920,hulslander-donald-eugene-1936,humphrey-eleanor-marie-1935" | split: "," %}
+{% for gp_key in spouse_grandparents %}
+{% assign gp = site.data.people[gp_key] %}
+- [{{ gp.name }}](/people/{{ gp.key }}.html) ({{ gp.birth_date | date: "%Y" }}–{{ gp.death_date | date: "%Y" }}) of {{ site.data.places[gp.birth_place_key].name }}
+{% endfor %}

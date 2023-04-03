@@ -1,5 +1,4 @@
 ---
-name: Buffalo
-type: city
-enclosed_by: Erie County
+title: Buffalo
+key: us-ny-erie-buffalo
 ---

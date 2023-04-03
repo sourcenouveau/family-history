@@ -1,6 +1,4 @@
 ---
-name: Cattaraugus County
+title: Cattaraugus County, NY
 key: us-ny-cattaraugus
-type: us-county
-enclosed_by: New York
 ---

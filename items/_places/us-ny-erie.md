@@ -1,6 +1,4 @@
 ---
-name: Erie County
+title: Erie County, NY
 key: us-ny-erie
-type: us-county
-enclosed_by: New York
 ---

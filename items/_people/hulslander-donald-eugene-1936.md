@@ -1,7 +1,4 @@
 ---
-name: Donald Eugene Hulslander
-birth_date: 1936
-birth_place: New York, United States of America
-death_date: 2013-12-22
-death_place:
+title: Donald Eugene Hulslander (1936–2013)
+key: hulslander-donald-eugene-1936
 ---
