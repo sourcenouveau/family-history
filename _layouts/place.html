@@ -7,6 +7,7 @@ layout: base
 {% assign enclosure_breadcrumbs = "" | split: ',' %}
 {% assign enclosure_links = "" | split: ',' %}
 {% assign enclosure = site.data.places[place.enclosing_place_key] %}
+{% if enclosure.enclosing_place_key %}
 {% for i in (1..10) %}
   {% capture enclosure_breadcrumb %}<li><a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a></li>{% endcapture %}
   {% assign enclosure_breadcrumbs = enclosure_breadcrumbs | push: enclosure_breadcrumb %}
@@ -14,9 +15,9 @@ layout: base
   {% capture enclosure_link %}<a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a>{% endcapture %}
   {% assign enclosure_links = enclosure_links | push: enclosure_link %}
 
-  {% if enclosure.enclosing_place_key == null or enclosure.enclosing_place_key == "" %}
-    {% break %}
-  {% endif %}
+  {% unless enclosure.enclosing_place_key %}
+  {% break %}
+  {% endunless %}
 
   {% if site.data.places contains enclosure.enclosing_place_key %}
     {% assign enclosure = site.data.places[enclosure.enclosing_place_key] %}
@@ -25,9 +26,11 @@ layout: base
     {% break %}
   {% endif %}
 {% endfor %}
+{% endif %}
 
 <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
+    <li class="is-active"><a>World</a></li>
     {{ enclosure_breadcrumbs | reverse }}
     <li class="is-active"><a href="#" aria-current="page">{{ place.name }}</a></li>
   </ul>
@@ -35,7 +38,7 @@ layout: base
 
 <h1 class="title">{{ place.name }}</h1>
 
-{{ place.name }} is a {{ place.division }} in {{ enclosure_links | join: ", " }}.
+{{ place.name }} is a {{ place.division }}{% if place.enclosing_place_key %} in {{ enclosure_links | join: ", " }}{% endif %}.
 
 <div class="content">
 {{ content }}
