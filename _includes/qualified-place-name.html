@@ -1,0 +1,20 @@
+{% assign enclosure = site.data.places[include.place_key] %}
+{% assign links = "" | split: "" %}
+
+{% for i in (1..100) %}
+  {% capture link %}<a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a>{% endcapture %}
+  {% assign links = links | push: link %}
+
+  {% unless enclosure.enclosing_place_key %}
+    {% break %}
+  {% endunless %}
+
+  {% unless site.data.places contains enclosure.enclosing_place_key %}
+    <span style="color: red;">ERROR: {{ enclosure.enclosing_place_key }} not found.</span>
+    {% break %}
+  {% endunless %}
+  
+  {% assign enclosure = site.data.places[enclosure.enclosing_place_key] %}
+{% endfor %}
+
+{{ links | join: ", " }}

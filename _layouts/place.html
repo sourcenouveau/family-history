@@ -4,25 +4,21 @@ layout: base
 
 {% assign place = site.data.places[page.key] %}
 
-{% assign enclosure_breadcrumbs = "" | split: ',' %}
-{% assign enclosure_links = "" | split: ',' %}
-{% assign enclosure = site.data.places[place.enclosing_place_key] %}
-{% if enclosure.enclosing_place_key %}
+{% assign breadcrumbs = "" | split: "" %}
+{% if place.enclosing_place_key %}
+{% assign enclosing_place = site.data.places[place.enclosing_place_key] %}
 {% for i in (1..10) %}
-  {% capture enclosure_breadcrumb %}<li><a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a></li>{% endcapture %}
-  {% assign enclosure_breadcrumbs = enclosure_breadcrumbs | push: enclosure_breadcrumb %}
+  {% capture breadcrumb %}<li><a href="/places/{{ enclosing_place.key }}">{{ enclosing_place.name }}</a></li>{% endcapture %}
+  {% assign breadcrumbs = breadcrumbs | push: breadcrumb %}
 
-  {% capture enclosure_link %}<a href="/places/{{ enclosure.key }}">{{ enclosure.name }}</a>{% endcapture %}
-  {% assign enclosure_links = enclosure_links | push: enclosure_link %}
-
-  {% unless enclosure.enclosing_place_key %}
+  {% unless enclosing_place.enclosing_place_key %}
   {% break %}
   {% endunless %}
 
-  {% if site.data.places contains enclosure.enclosing_place_key %}
-    {% assign enclosure = site.data.places[enclosure.enclosing_place_key] %}
+  {% if site.data.places contains enclosing_place.enclosing_place_key %}
+    {% assign enclosing_place = site.data.places[enclosing_place.enclosing_place_key] %}
   {% else %}
-    ERROR: {{ enclosure.enclosing_place_key }} not found.
+    ERROR: {{ enclosing_place.enclosing_place_key }} not found.
     {% break %}
   {% endif %}
 {% endfor %}
@@ -31,14 +27,18 @@ layout: base
 <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
     <li class="is-active"><a>World</a></li>
-    {{ enclosure_breadcrumbs | reverse }}
+    {{ breadcrumbs | reverse }}
     <li class="is-active"><a href="#" aria-current="page">{{ place.name }}</a></li>
   </ul>
 </nav>
 
 <h1 class="title">{{ place.name }}</h1>
 
-{{ place.name }} is a {{ place.division }}{% if place.enclosing_place_key %} in {{ enclosure_links | join: ", " }}{% endif %}.
+{% capture qualified_enclosing_place %}
+{% include qualified-place-name.html place_key=place.enclosing_place_key %}
+{% endcapture %}
+
+{{ place.name }} is a {{ place.division }}{% if place.enclosing_place_key %} in {{ qualified_enclosing_place | strip }}{% endif %}.
 
 <div class="content">
 {{ content }}
