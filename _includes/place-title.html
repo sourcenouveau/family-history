@@ -1,13 +1,13 @@
-{% assign place = site.data.places[include.place_key] %}
-{% assign enclosing_place = site.data.places[place.enclosing_place_key] %}
+{% assign _include_place_title_place = site.data.places[include.place_key] %}
+{% assign _include_place_title_enclosing_place = site.data.places[_include_place_title_place.enclosing_place_key] %}
 
-{% if enclosing_place.division == "county" %}
-  {% assign state_place = site.data.places[enclosing_place.enclosing_place_key] %}
-  {% assign state_abbrev = site.data["us-states"][state_place.key]["ansi-code"] %}
-  {{ place.name }}, {{ state_abbrev }}
-{% elsif enclosing_place.division == "state" %}
-  {% assign state_abbrev = site.data["us-states"][enclosing_place.key]["ansi-code"] %}
-  {{ place.name }} County, {{ state_abbrev }}
+{% if _include_place_title_enclosing_place.division == "county" %}
+  {% assign _include_place_title_state_place = site.data.places[_include_place_title_enclosing_place.enclosing_place_key] %}
+  {% assign _include_place_title_state_abbrev = site.data["us-states"][_include_place_title_state_place.key]["ansi-code"] %}
+  {{ _include_place_title_place.name }}, {{ _include_place_title_state_abbrev }}
+{% elsif _include_place_title_enclosing_place.division == "state" %}
+  {% assign _include_place_title_state_abbrev = site.data["us-states"][_include_place_title_enclosing_place.key]["ansi-code"] %}
+  {{ _include_place_title_place.name }} County, {{ _include_place_title_state_abbrev }}
 {% else %}
-  {{ place.name }}
+  {{ _include_place_title_place.name }}
 {% endif %}

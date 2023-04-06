@@ -3,6 +3,14 @@ layout: content
 title: Places
 ---
 
+{% assign sorted_places = "" | split: "" %}
+
+{% for place_item in site.data.places %}
+  {% assign sorted_places = sorted_places | push: place_item[1] %}
+{% endfor %}
+
+{% assign sorted_places = sorted_places | sort: "name" %}
+
 <h1>{{ page.title }}</h1>
 
 <table>
@@ -13,11 +21,10 @@ title: Places
     </tr>
   </thead>
   <tbody>
-{% for place in site.places %}
-{% assign data = site.data.places[place.key] %}
+{% for place in sorted_places %}
     <tr>
-      <td><a href="{{ place.url }}">{{ data.name }}</a></td>
-      <td>{{ data.division }}</td>
+      <td><a href="{{ place.url }}">{% include place-title.html place_key=place.key %}</a></td>
+      <td>{{ place.division }}</td>
     </tr>
 {% endfor %}
   </tbody>
