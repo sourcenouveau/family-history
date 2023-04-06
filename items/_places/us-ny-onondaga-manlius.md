@@ -1,4 +1,4 @@
 ---
 key: us-ny-onondaga-manlius
-title: Manlius
+title: Manlius, NY
 ---

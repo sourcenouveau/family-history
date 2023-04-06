@@ -1,4 +1,4 @@
 ---
 key: us-ny-stlawrence-depeyster
-title: De Peyster
+title: De Peyster, NY
 ---

@@ -1,4 +1,4 @@
 ---
 key: us-ny-onondaga-manlius-minoa
-title: Minoa
+title: Minoa, NY
 ---

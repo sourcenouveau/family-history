@@ -1,4 +1,4 @@
 ---
 key: us-md-frederick-frederick
-title: Frederick
+title: Frederick, MD
 ---

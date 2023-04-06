@@ -1,4 +1,4 @@
 ---
 key: us-ny-oneida-verona
-title: Verona
+title: Verona, NY
 ---

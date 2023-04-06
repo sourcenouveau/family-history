@@ -1,4 +1,4 @@
 ---
-title: Erie County, NY
 key: us-ny-erie
+title: Erie County, NY
 ---

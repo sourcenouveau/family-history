@@ -32,7 +32,7 @@ layout: base
   </ul>
 </nav>
 
-<h1 class="title">{% include place-title.html place_key=place.key %}</h1>
+<h1 class="title">{{ page.title }}</h1>
 
 {% capture qualified_enclosing_place %}
 {% include qualified-place-name.html place_key=place.enclosing_place_key %}

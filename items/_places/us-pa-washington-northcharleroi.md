@@ -1,4 +1,4 @@
 ---
 key: us-pa-washington-northcharleroi
-title: North Charleroi
+title: North Charleroi, PA
 ---
