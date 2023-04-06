@@ -1,0 +1,13 @@
+{% assign place = site.data.places[include.place_key] %}
+{% assign enclosing_place = site.data.places[place.enclosing_place_key] %}
+
+{% if enclosing_place.division == "county" %}
+  {% assign state_place = site.data.places[enclosing_place.enclosing_place_key] %}
+  {% assign state_abbrev = site.data["us-states"][state_place.key]["ansi-code"] %}
+  {{ place.name }}, {{ state_abbrev }}
+{% elsif enclosing_place.division == "state" %}
+  {% assign state_abbrev = site.data["us-states"][enclosing_place.key]["ansi-code"] %}
+  {{ place.name }} County, {{ state_abbrev }}
+{% else %}
+  {{ place.name }}
+{% endif %}

@@ -3,8 +3,8 @@ layout: base
 ---
 
 {% assign place = site.data.places[page.key] %}
-
 {% assign breadcrumbs = "" | split: "" %}
+
 {% if place.enclosing_place_key %}
 {% assign enclosing_place = site.data.places[place.enclosing_place_key] %}
 {% for i in (1..10) %}
@@ -32,7 +32,7 @@ layout: base
   </ul>
 </nav>
 
-<h1 class="title">{{ place.name }}</h1>
+<h1 class="title">{% include place-title.html place_key=place.key %}</h1>
 
 {% capture qualified_enclosing_place %}
 {% include qualified-place-name.html place_key=place.enclosing_place_key %}

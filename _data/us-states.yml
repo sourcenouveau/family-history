@@ -1,151 +1,201 @@
 # States of the United States of America
--
-  name: Alabama
-  iso-3166-2-code: US-AL
--
+us-ak:
   name: Alaska
+  ansi-code: AK
   iso-3166-2-code: US-AK
--
-  name: Arizona
-  iso-3166-2-code: US-AZ
--
+us-al:
+  name: Alabama
+  ansi-code: AL
+  iso-3166-2-code: US-AL
+us-ar:
   name: Arkansas
+  ansi-code: AR
   iso-3166-2-code: US-AR
--
+us-az:
+  name: Arizona
+  ansi-code: AZ
+  iso-3166-2-code: US-AZ
+us-ca:
   name: California
+  ansi-code: CA
   iso-3166-2-code: US-CA
--
+us-co:
   name: Colorado
+  ansi-code: CO
   iso-3166-2-code: US-CO
--
+us-ct:
   name: Connecticut
+  ansi-code: CT
   iso-3166-2-code: US-CT
--
+us-de:
   name: Delaware
+  ansi-code: DE
   iso-3166-2-code: US-DE
--
+us-fl:
   name: Florida
+  ansi-code: FL
   iso-3166-2-code: US-FL
--
+us-ga:
   name: Georgia
+  ansi-code: GA
   iso-3166-2-code: US-GA
--
+us-hi:
   name: Hawaii
+  ansi-code: HI
   iso-3166-2-code: US-HI
--
-  name: Idaho
-  iso-3166-2-code: US-ID
--
-  name: Illinois
-  iso-3166-2-code: US-IL
--
-  name: Indiana
-  iso-3166-2-code: US-IN
--
+us-ia:
   name: Iowa
+  ansi-code: IA
   iso-3166-2-code: US-IA
--
+us-id:
+  name: Idaho
+  ansi-code: ID
+  iso-3166-2-code: US-ID
+us-il:
+  name: Illinois
+  ansi-code: IL
+  iso-3166-2-code: US-IL
+us-in:
+  name: Indiana
+  ansi-code: IN
+  iso-3166-2-code: US-IN
+us-ks:
   name: Kansas
+  ansi-code: KS
   iso-3166-2-code: US-KS
--
+us-ky:
   name: Kentucky
+  ansi-code: KY
   iso-3166-2-code: US-KY
--
+us-la:
   name: Louisiana
+  ansi-code: LA
   iso-3166-2-code: US-LA
--
-  name: Maine
-  iso-3166-2-code: US-ME
--
-  name: Maryland
-  iso-3166-2-code: US-MD
--
+us-ma:
   name: Massachusetts
+  ansi-code: MA
   iso-3166-2-code: US-MA
--
+us-md:
+  name: Maryland
+  ansi-code: MD
+  iso-3166-2-code: US-MD
+us-me:
+  name: Maine
+  ansi-code: ME
+  iso-3166-2-code: US-ME
+us-mi:
   name: Michigan
+  ansi-code: MI
   iso-3166-2-code: US-MI
--
+us-mn:
   name: Minnesota
+  ansi-code: MN
   iso-3166-2-code: US-MN
--
-  name: Mississippi
-  iso-3166-2-code: US-MS
--
+us-mo:
   name: Missouri
+  ansi-code: MO
   iso-3166-2-code: US-MO
--
+us-ms:
+  name: Mississippi
+  ansi-code: MS
+  iso-3166-2-code: US-MS
+us-mt:
   name: Montana
+  ansi-code: MT
   iso-3166-2-code: US-MT
--
-  name: Nebraska
-  iso-3166-2-code: US-NE
--
-  name: Nevada
-  iso-3166-2-code: US-NV
--
-  name: New Hampshire
-  iso-3166-2-code: US-NH
--
-  name: New Jersey
-  iso-3166-2-code: US-NJ
--
-  name: New Mexico
-  iso-3166-2-code: US-NM
--
-  name: New York
-  iso-3166-2-code: US-NY
--
+us-nc:
   name: North Carolina
+  ansi-code: NC
   iso-3166-2-code: US-NC
--
+us-nd:
   name: North Dakota
+  ansi-code: ND
   iso-3166-2-code: US-ND
--
+us-ne:
+  name: Nebraska
+  ansi-code: NE
+  iso-3166-2-code: US-NE
+us-nh:
+  name: New Hampshire
+  ansi-code: NH
+  iso-3166-2-code: US-NH
+us-nj:
+  name: New Jersey
+  ansi-code: NJ
+  iso-3166-2-code: US-NJ
+us-nm:
+  name: New Mexico
+  ansi-code: NM
+  iso-3166-2-code: US-NM
+us-nv:
+  name: Nevada
+  ansi-code: NV
+  iso-3166-2-code: US-NV
+us-ny:
+  name: New York
+  ansi-code: NY
+  iso-3166-2-code: US-NY
+us-oh:
   name: Ohio
+  ansi-code: OH
   iso-3166-2-code: US-OH
--
+us-ok:
   name: Oklahoma
+  ansi-code: OK
   iso-3166-2-code: US-OK
--
+us-or:
   name: Oregon
+  ansi-code: OR
   iso-3166-2-code: US-OR
--
+us-pa:
   name: Pennsylvania
+  ansi-code: PA
   iso-3166-2-code: US-PA
--
+us-ri:
   name: Rhode Island
+  ansi-code: RI
   iso-3166-2-code: US-RI
--
+us-sc:
   name: South Carolina
+  ansi-code: SC
   iso-3166-2-code: US-SC
--
+us-sd:
   name: South Dakota
+  ansi-code: SD
   iso-3166-2-code: US-SD
--
+us-tn:
   name: Tennessee
+  ansi-code: TN
   iso-3166-2-code: US-TN
--
+us-tx:
   name: Texas
+  ansi-code: TX
   iso-3166-2-code: US-TX
--
+us-ut:
   name: Utah
+  ansi-code: UT
   iso-3166-2-code: US-UT
--
-  name: Vermont
-  iso-3166-2-code: US-VT
--
+us-va:
   name: Virginia
+  ansi-code: VA
   iso-3166-2-code: US-VA
--
+us-vt:
+  name: Vermont
+  ansi-code: VT
+  iso-3166-2-code: US-VT
+us-wa:
   name: Washington
+  ansi-code: WA
   iso-3166-2-code: US-WA
--
-  name: West Virginia
-  iso-3166-2-code: US-WV
--
+us-wi:
   name: Wisconsin
+  ansi-code: WI
   iso-3166-2-code: US-WI
--
+us-wv:
+  name: West Virginia
+  ansi-code: WV
+  iso-3166-2-code: US-WV
+us-wy:
   name: Wyoming
+  ansi-code: WY
   iso-3166-2-code: US-WY
