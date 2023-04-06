@@ -23,7 +23,7 @@ title: Places
   <tbody>
 {% for place in sorted_places %}
     <tr>
-      <td><a href="{{ place.url }}">{% include place-title.html place_key=place.key %}</a></td>
+      <td><a href="/places/{{ place.key }}">{% include place-title.html place_key=place.key %}</a></td>
       <td>{{ place.division }}</td>
     </tr>
 {% endfor %}
