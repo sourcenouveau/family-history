@@ -45,8 +45,21 @@
     </section>
 
     <footer class="footer">
-      <div class="container is-max-desktop">
-        <p class="is-size-7 has-text-grey-lighter">
+      {% assign footer_nav = "" | split: "" %}
+
+      {% for item in site.data.navigation %}
+        {% capture footer_nav_item %}<a href="{{ item.link | relative_url }}" class="has-text-grey-light">{{ item.name }}</a>{% endcapture %}
+        {% assign footer_nav = footer_nav | push: footer_nav_item %}
+      {% endfor %}
+
+      <div class="container is-max-desktop has-text-grey-light">
+        <p class="is-size-6">
+          <a href="/" class="has-text-grey-light">Dudley-Dixon Family History</a>
+        </p>
+        <p class="is-size-7">
+          {{ footer_nav | join: " · " }}
+        </p>
+        <p class="mt-4 is-size-7">
           Copyright &copy; Michael Dudley. All rights reserved.
         </p>
       </div>
