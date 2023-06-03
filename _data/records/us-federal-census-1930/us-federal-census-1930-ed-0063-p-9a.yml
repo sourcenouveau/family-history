@@ -1,0 +1,18 @@
+key: us-federal-census-1930-ed-0063-p-9a
+name: United States Federal Census (1930), ED 0063, Page 9A
+source_key: us-federal-census-1930
+variants:
+  ancestry:
+    original_url: https://www.ancestry.com/imageviewer/collections/6224/images/4661079_01097
+    media_md5: fd70ac399ec675894b85b667fa3cad02
+    media_sha1: 0571e924006e80c51bea9d8588e97867c361dde7
+    media_sha256: 6d5f5e4772f6e94f7a58e792252f2e81f040131ffd618e0a083fdb07cbb7354d
+    media_path: records/us-federal-census-1930/us-federal-census-1930-ed-0063-p-9a.jpg
+    thumbnail_path: records/us-federal-census-1930/thumbnails/us-federal-census-1930-ed-0063-p-9a-400px.jpg
+  familysearch:
+    original_url: https://www.familysearch.org/ark:/61903/3:1:33S7-9RZY-TF4
+    media_md5: 78b4902e7e4cdfab73156cc155be98c8
+    media_sha1: c0ee045aab67152e25fbad9ed006d8008ceafcfa
+    media_sha256: 96a04ab954d474c6042855f299a65c30b060782224ea40948b75c7b7d8b86e93
+    media_path: 
+    thumbnail_path: 

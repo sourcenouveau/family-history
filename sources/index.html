@@ -3,6 +3,14 @@ layout: content
 title: Sources
 ---
 
+{% assign sorted_sources = "" | split: "" %}
+
+{% for source_item in site.data.sources %}
+  {% assign sorted_sources = sorted_sources | push: source_item[1] %}
+{% endfor %}
+
+{% assign sorted_sources = sorted_sources | sort: "name" %}
+
 <h1>{{ page.title }}</h1>
 
 <table>
@@ -12,9 +20,9 @@ title: Sources
     </tr>
   </thead>
   <tbody>
-{% for source in site.sources %}
+{% for source in sorted_sources %}
     <tr>
-      <td><a href="{{ source.url }}">{{ source.name }}</a></td>
+      <td><a href="/sources/{{ source.key }}">{{ source.name }}</a></td>
     </tr>
 {% endfor %}
   </tbody>

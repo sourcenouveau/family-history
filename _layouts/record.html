@@ -1,0 +1,35 @@
+---
+layout: base
+---
+
+{% assign source = site.data.sources[page.source_key] %}
+{% assign record = site.data.records[page.source_key][page.key] %}
+
+{% capture bucket_url %}//{{ site.data.aws["bucket"] }}.s3.amazonaws.com/{% endcapture %}
+{% capture media_url %}{{ bucket_url }}{{ record["media_path"] }}{% endcapture %}
+{% capture thumbnail_url %}{{ bucket_url }}{{ record["thumbnail_path"] }}{% endcapture %}
+
+<nav class="breadcrumb" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="/sources">Sources</a></li>
+    <li><a href="/sources/{{ source.key }}">{{ source.name }}</a></li>
+    <li class="is-active"><a href="#" aria-current="page">{{ record.name }}</a></li>
+  </ul>
+</nav>
+
+<h1 class="title">{{ page.title }}</h1>
+
+<div class="is-pulled-right has-text-centered" style="width: 200px;">
+  <figure class="image">
+    <a href="{{ media_url }}">
+      <img src="{{ thumbnail_url }}" title="{{ page.title }}">
+    </a>
+  </figure>
+  <p>
+    <a href="{{ media_url }}">Download</a>
+  </p>
+</div>
+
+<div class="content">
+{{ content }}
+</div>

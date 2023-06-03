@@ -9,6 +9,8 @@ collections:
     output: true
   places:
     output: true
+  records:
+    output: true
   sources:
     output: true
 
@@ -43,6 +45,12 @@ defaults:
     values:
       layout: "post"
       permalink: /about/:year/:title:output_ext
+  -
+    scope:
+      path: ""
+      type: "records"
+    values:
+      layout: "record"
   -
     scope:
       path: ""
